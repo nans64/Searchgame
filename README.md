@@ -1,2 +1,2 @@
 # searchgame
-[live preview](https://laspargus.github.io/searchgame/)
+[live preview](https://nans64.github.io/searchgame/)

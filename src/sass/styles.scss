@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/bootstrap";
+@font-face {
+  font-family: "Big Noodles";
+  src: url("../fonts/big_noodle_titling.ttf");
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+p {
+  font-size: 13px;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+.gameImage,
+video,
+.screenshots,
+.videoyoutube {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 900;
+  color: red;
+  text-decoration: none;
+
+  @include for-tablet {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  @include for-phone-only {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.logo:hover {
+  color: red;
+  text-decoration: none;
+}
+
+h2 {
+  color: red;
+  font-weight: 900;
+}
+
+.cardGame {
+  h1 {
+    font-size: 1rem !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+  }
+}
